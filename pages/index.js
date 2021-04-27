@@ -10,6 +10,10 @@ import { list_product } from "../components/variables/product";
 import Link from "next/link";
 export default function test() {
   let star = star_list();
+
+  const handle = () => {
+   <Link href="/product"></Link>
+  };
   return (
     <>
       <OrganismNav />
@@ -30,6 +34,7 @@ export default function test() {
                   border="none"
                   padding="10px 20px"
                   radius="10px"
+                  click={handle}
                 />
 
               </div>
