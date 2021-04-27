@@ -14,7 +14,7 @@ export default function paragraph({
         marginTop: marginTop,
         fontSize: size,
         fontWeight: weight,
-        fontStyle:"Roboto Condensed;"
+        fontStyle:"Roboto Condensed"
       }}
     >
       {value}

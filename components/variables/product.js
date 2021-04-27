@@ -1,4 +1,3 @@
-import { useState } from "react";
 export const list_product = () => [
   {
     id: 1,
@@ -107,4 +106,3 @@ export const list_product = () => [
     price: "Rp. 18.000",
 },
 ];
-export const listCart = [];

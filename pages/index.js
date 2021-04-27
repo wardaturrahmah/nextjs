@@ -7,12 +7,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Navbar, Nav, Form, FormControl } from "react-bootstrap";
 import { star_list } from "../components/variables/star_list";
 import { list_product } from "../components/variables/product";
+import { useRouter } from "next/router";
+
 import Link from "next/link";
 export default function test() {
+  const router = useRouter();
   let star = star_list();
 
   const handle = () => {
-   <Link href="/product"></Link>
+      router.push("/product");
   };
   return (
     <>
@@ -34,7 +37,7 @@ export default function test() {
                   border="none"
                   padding="10px 20px"
                   radius="10px"
-                  click={handle}
+                  click ={handle}
                 />
 
               </div>
@@ -44,8 +47,8 @@ export default function test() {
           <div className="col mt-3">
             <AtomImage
                   image="/home/tita.jpg"
-                  height="100%"
-                  width="100%"
+                  height="280px"
+                  width="400px"
                   radius="10px"
               />
           </div>
@@ -70,6 +73,7 @@ export default function test() {
                         price={product.price}
                         id={product.id}
                         index={index}
+
                       />
                     </div>
                   </>
